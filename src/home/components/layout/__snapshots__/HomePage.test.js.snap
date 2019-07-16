@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomePage Component renders HomePage 1`] = `
+<Fragment>
+  <Connect(SearchBar) />
+  <Connect(opentableApi) />
+</Fragment>
+`;
