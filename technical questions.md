@@ -6,6 +6,8 @@
   React Suspense is one of the useful latest feature addition to react. It allows us to load a fallback component while the particular component is waiting for resources. It suspends component rendering until the required resources are available.
     
 Example:
+
+```javascript
 import React, { Suspense } from 'react';
 import RestaurantsList from './RestaurantsList';
 import Loader from './Loader';
@@ -17,7 +19,9 @@ function App(props) {
 		</Suspense>
 	);
 }
-  In the above example, React Suspense is used to display a loader until the RestaurantList component is available.<br/>
+```
+
+In the above example, React Suspense is used to display a loader until the RestaurantList component is available.<br/>
     
 3. How would you track down a performance issue in production? Have you ever had to do this?<br/>
   I would add error tracking frameworks/services to capture issues on production and would track down to the root cause with the help of their crash analytics. Also, newly added Error Boundaries feature in ReactJs can be used to activate handler logic and render a fallback component to prevent the entire application from crashing. I have used Crashlytics for a react native app to log all the crashes with their root cause.
@@ -26,7 +30,7 @@ function App(props) {
     I would add ratings and reviews to each restaurant in the api, it would help the user to decide on a better restaurant.<br/>
     
 5. Please describe yourself using JSON.<br/>
-
+```json
 {
   "name": "Dhaneswar Govindan Pandian",
   "education": {
@@ -73,4 +77,4 @@ function App(props) {
     "Sports"
   ]
 }
-     
+```   
